@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nMy9u6h1la6UwTy6CyZXFFrmD9yMUQWK9zfencHtvbk=",
+  "Source": "EventZen.VendorApi",
+  "BasePath": "_content/EventZen.VendorApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

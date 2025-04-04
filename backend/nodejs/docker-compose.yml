@@ -1,0 +1,21 @@
+services:
+  # MongoDB Service
+  mongo:
+    container_name: eventzen
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongo_db:/data/db
+
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      PORT: 5000
+      MONGO_URI: mongodb+srv://dbuser:LONdonwnpl.123@atlascluster.hugofec.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_db: {}
